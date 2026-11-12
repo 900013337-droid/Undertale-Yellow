@@ -1,0 +1,43 @@
+UNDERTALE YELLOW — TRUE FINAL BOSS FIGHT ONLY ADD-ON
+
+WHAT THIS ADDS
+- Hooks the end of the existing Clover SOUL capsule animation.
+- Waits for the existing post-fight cutscene and dialogue to finish.
+- Starts an additional Amalgamation boss fight using the game's existing Asgore battle engine.
+- Adds four forms: The Collector, The Twin Verdict, The Soul Chorus, and Godform.
+- Adds 16,000 total boss HP, escalating attack/defense stats, four boss-form images, and directional SOUL LOCK challenges.
+- A successful sequence opens a damage window. A failed or timed-out sequence costs Clover HP and strengthens the next incoming attack.
+- Saves and temporarily disables only this mod's God Mode, Max HP, and Infinite Damage toggles, then restores their previous values after the fight ends.
+
+WHAT IT DOES NOT CHANGE
+- It does not rebuild the F5 menu.
+- It does not change F5, mouse-wheel scrolling, the Normal Genocide quick-start, or the Ultra Genocide menu toggle.
+- It does not replace the existing Martlet fight.
+- It does not change earlier route battles.
+
+IMPORTANT IMPLEMENTATION NOTE
+The four-form Amalgamation uses Undertale Yellow's existing Asgore battle engine and attack controller as its battle foundation. The add-on supplies the new form art, phase progression, SOUL LOCK minigames, damage windows, and difficulty scaling. It does not create a wholly new projectile/object library for bone spears or skull beams.
+
+FILES
+- UTY_True_Final_Boss_Fight_Only_Installer.csx
+- Sprite_Import/Sprites/spr_uty_true_boss_stage1_0.png
+- Sprite_Import/Sprites/spr_uty_true_boss_stage2_0.png
+- Sprite_Import/Sprites/spr_uty_true_boss_stage3_0.png
+- Sprite_Import/Sprites/spr_uty_true_boss_stage4_0.png
+
+INSTALL
+1. Make a backup copy of your currently modded data.win.
+2. Open that copy in UndertaleModTool.
+3. Use UndertaleModTool's ImportGraphicsAdvanced.csx with the supplied Sprite_Import/Sprites folder. Confirm the resulting sprite resources are named exactly:
+   spr_uty_true_boss_stage1
+   spr_uty_true_boss_stage2
+   spr_uty_true_boss_stage3
+   spr_uty_true_boss_stage4
+4. Run UTY_True_Final_Boss_Fight_Only_Installer.csx from UndertaleModTool's Scripts menu.
+5. If the script reports success, save data.win with Ctrl+S.
+6. Test the backup before replacing your main data.win.
+
+The installer creates a separate backup beside data.win named:
+data.win.before_true_final_boss_fight
+
+This script was assembled and statically checked in this workspace. It has not been executed in UndertaleModTool or tested in a live game session here. If UndertaleModTool reports a compile/import error, do not save that copy; reopen your backup and keep the error message.
